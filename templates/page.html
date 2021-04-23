@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose the action to do</title>
+</head>
+<body>
+<h2>Choose the action to do</h2>
+
+<a class="btn btn-primary" href="{% url 'app1:page1' %}">Set value to redis</a>
+<br>
+<br>
+<a class="btn btn-primary" href="{% url 'app1:page2' %}">Get value from redis</a>
+<br>
+<br>
+<a class="btn btn-primary" href="{% url 'app1:page3' %}">Delete value from redis</a>
+<br>
+<br>
+<a class="btn btn-primary" href="{% url 'app1:page4' %}">Get all the keys from redis</a>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page3</title>
+</head>
+<body>
+<h3><a class="btn btn-primary" href="{% url 'page' %}">Return Home Page</a></h3>
+<br>
+<br>
+<h3>Delete value from redis</h3>
+<br>
+<form action="{% url 'app1:page3' %}" enctype="multipart/form-data" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+        <label>Key:</label>
+        <input class="form-control" type="text" name="key" value="" required>
+    </div>
+    <div class="text-right">
+        <button type="submit" class="btn btn-primary">Delete value<i class="icon-add font-size-sm"></i>
+        </button>
+    </div>
+</form>
+{% if response %}
+    <h2>{{ message }}</h2>
+{% endif %}
+</body>
+</html>

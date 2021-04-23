@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page4</title>
+</head>
+<body>
+<h3><a class="btn btn-primary" href="{% url 'page' %}">Return Home Page</a></h3>
+<br>
+<br>
+<h3>Get all the keys from redis</h3>
+<br>
+
+
+<h4>Keys:</h4>
+{% for key in keys %}
+    <h2>{{ key }}</h2>
+{% endfor %}
+
+<br>
+{% if responseTime %}
+    <h4>Redis response time:</h4>
+    <h2>{{ responseTime }}</h2>
+{% endif %}
+</body>
+</html>
