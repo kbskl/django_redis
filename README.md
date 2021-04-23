@@ -12,8 +12,6 @@ but here are the entry level
    pip3 install django
    pip3 install django-redis
    ```
-5. Run ```python3 manage.py runserver``` in the root folder
-6. Go to ```http://127.0.0.1:8000```
 
 
 
